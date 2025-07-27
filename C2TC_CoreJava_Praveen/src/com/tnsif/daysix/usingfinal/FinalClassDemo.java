@@ -6,14 +6,12 @@ final class FinalClass {
 	}
 }
 
-//can't create child classes from Final class, Ex: String, Wrapper Classes, System, Scanner, Number are Final classes
-class FinalChildClass extends FinalClass {
-}
+// ❌ This will cause error because FinalClass is final
+// class FinalChildClass extends FinalClass { }
 
 public class FinalClassDemo {
 	public static void main(String[] args) {
-		// Create the object of final class
-		FinalClass f1 = new FinalClass(); // Call show() method using object reference variable ab.
+		FinalClass f1 = new FinalClass();
 		f1.show();
 	}
 }
